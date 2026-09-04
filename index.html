@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="FRA MONITOR - AI-powered Forest Rights Act monitoring and decision support system."
+    >
+
+    <title>FRA MONITOR — AI Decision Support</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Leaflet -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    >
+
+    <!-- Our CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     SCROLL PROGRESS
+===================================================== -->
+
+<div class="scroll-progress">
+    <span id="scrollProgress"></span>
+</div>
+
+
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="topbar">
+
+    <a
+        href="#hero"
+        class="brand"
+    >
+
+        <div class="brand-mark">
+            FRA
+        </div>
+
+        <div>
+            <strong>FRA MONITOR</strong>
+
+            <small>
+                Decision Intelligence
+            </small>
+        </div>
+
+    </a>
+
+
+    <nav>
+
+        <a href="#problem">
+            Problem
+        </a>
+
+        <a href="#solution">
+            Solution
+        </a>
+
+        <a href="#map-section">
+            Live Map
+        </a>
+
+        <a href="#insights">
+            AI Insights
+        </a>
+
+        <a href="#tech">
+            Technology
+        </a>
+
+    </nav>
+
+
+    <button
+        class="nav-cta"
+        onclick="document.getElementById('map-section').scrollIntoView({behavior:'smooth'})"
+    >
+        Open Monitor →
+    </button>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section
+    id="hero"
+    class="story-section hero"
+>
+
+
+    <!-- Background landscape -->
+
+    <div class="forest-layer">
+
+        <div class="sun-glow"></div>
+
+        <div class="hill hill-back"></div>
+
+        <div class="hill hill-front"></div>
+
+
+        <!-- Trees -->
+
+        <div class="tree t1"></div>
+        <div class="tree t2"></div>
+        <div class="tree t3"></div>
+        <div class="tree t4"></div>
+        <div class="tree t5"></div>
+        <div class="tree t6"></div>
+        <div class="tree t7"></div>
+        <div class="tree t8"></div>
+        <div class="tree t9"></div>
+        <div class="tree t10"></div>
+        <div class="tree t11"></div>
+        <div class="tree t12"></div>
+
+
+        <!-- Buildings -->
+
+        <div class="building b1"></div>
+        <div class="building b2"></div>
+        <div class="building b3"></div>
+        <div class="building b4"></div>
+        <div class="building b5"></div>
+        <div class="building b6"></div>
+
+
+        <!-- Road -->
+
+        <div class="road"></div>
+
+    </div>
+
+
+
+    <!-- Hero content -->
+
+    <div class="hero-content">
+
+
+        <div class="eyebrow reveal">
+
+            <span></span>
+
+            AI + GIS + GOVERNANCE
+
+        </div>
+
+
+        <h1 class="reveal">
+
+            Understand the forest.
+            <br>
+
+            <em>Understand the claims.</em>
+
+        </h1>
+
+
+        <p class="reveal">
+
+            AI-powered decision support for monitoring
+            Forest Rights Act implementation across
+            districts, claims and land records.
+
+        </p>
+
+
+        <div class="hero-actions reveal">
+
+            <button
+                class="primary-btn"
+                onclick="document.getElementById('map-section').scrollIntoView({behavior:'smooth'})"
+            >
+
+                Explore the Map
+
+                <span>↗</span>
+
+            </button>
+
+
+            <div class="scroll-hint">
+
+                ↓ Scroll to see the story
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Hero statistics -->
+
+    <div class="hero-stats reveal">
+
+        <div>
+
+            <strong>6</strong>
+
+            <span>
+                Districts monitored
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>6.4K+</strong>
+
+            <span>
+                Claims analysed
+            </span>
+
+        </div>
+
+
+        <div>
+
+            <strong>AI</strong>
+
+            <span>
+                Anomaly detection
+            </span>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     PROBLEM
+===================================================== -->
+
+<section
+    id="problem"
+    class="content-section"
+>
+
+    <div class="section-inner">
+
+
+        <div class="two-col">
+
+
+            <div>
+
+                <div class="eyebrow dark">
+
+                    <span></span>
+
+                    THE PROBLEM
+
+                </div>
+
+
+                <h2>
+
+                    India's forests are changing.
+                    <em>The data is fragmented.</em>
+
+                </h2>
+
+
+                <p class="lead">
+
+                    FRA implementation generates information
+                    across multiple departments and systems.
+                    When these datasets remain disconnected,
+                    delays and inconsistencies become difficult
+                    to identify.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="fragmented-cards">
+
+
+                <div class="source-card reveal">
+
+                    <span>01</span>
+
+                    <b>
+                        FRA Claims
+                    </b>
+
+                    <small>
+                        Applications, approvals,
+                        rejections and pending claims.
+                    </small>
+
+                </div>
+
+
+                <div class="source-card reveal">
+
+                    <span>02</span>
+
+                    <b>
+                        Land Records
+                    </b>
+
+                    <small>
+                        Claimed area compared with
+                        recorded land information.
+                    </small>
+
+                </div>
+
+
+                <div class="source-card reveal">
+
+                    <span>03</span>
+
+                    <b>
+                        District Data
+                    </b>
+
+                    <small>
+                        Geographic and administrative
+                        information.
+                    </small>
+
+                </div>
+
+
+                <div class="source-card reveal">
+
+                    <span>04</span>
+
+                    <b>
+                        State Reports
+                    </b>
+
+                    <small>
+                        Aggregated progress and
+                        implementation indicators.
+                    </small>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="problem-strip">
+
+            <span>
+                DISCONNECTED DATA
+            </span>
+
+            <span>
+                ↓
+            </span>
+
+            <span>
+                MANUAL MONITORING
+            </span>
+
+            <span>
+                ↓
+            </span>
+
+            <span>
+                HIDDEN ANOMALIES
+            </span>
+
+            <span>
+                ↓
+            </span>
+
+            <strong>
+                SLOWER DECISIONS
+            </strong>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SOLUTION
+===================================================== -->
+
+<section
+    id="solution"
+    class="content-section solution-section"
+>
+
+    <div class="section-inner">
+
+
+        <div class="center-heading">
+
+
+            <div class="eyebrow dark">
+
+                <span></span>
+
+                OUR APPROACH
+
+                <span></span>
+
+            </div>
+
+
+            <h2>
+
+                One map.
+                <em>One view.</em>
+                Better decisions.
+
+            </h2>
+
+
+            <p>
+
+                Bring claims, land information,
+                geography and AI-powered anomaly
+                detection into a single monitoring layer.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="pipeline">
+
+
+            <div class="pipe-card reveal">
+
+                <b>01</b>
+
+                <strong>
+                    Collect
+                </strong>
+
+                <small>
+                    Claims + geographic data
+                </small>
+
+            </div>
+
+
+            <div class="pipe-arrow">
+                →
+            </div>
+
+
+            <div class="pipe-card reveal">
+
+                <b>02</b>
+
+                <strong>
+                    Connect
+                </strong>
+
+                <small>
+                    Link districts and records
+                </small>
+
+            </div>
+
+
+            <div class="pipe-arrow">
+                →
+            </div>
+
+
+            <div class="pipe-card ai-card reveal">
+
+                <b>03</b>
+
+                <strong>
+                    AI Detect
+                </strong>
+
+                <small>
+                    Identify unusual patterns
+                </small>
+
+            </div>
+
+
+            <div class="pipe-arrow">
+                →
+            </div>
+
+
+            <div class="pipe-card reveal">
+
+                <b>04</b>
+
+                <strong>
+                    Decide
+                </strong>
+
+                <small>
+                    Prioritise human review
+                </small>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     MAP DASHBOARD
+===================================================== -->
+
+<section
+    id="map-section"
+    class="dashboard-section"
+>
+
+
+    <div class="dashboard-head">
+
+
+        <div>
+
+            <div class="eyebrow dark">
+
+                <span></span>
+
+                FRA MONITORING CONSOLE
+
+            </div>
+
+
+            <h2>
+
+                District
+                <em>Intelligence</em>
+
+            </h2>
+
+        </div>
+
+
+
+        <!-- Forest scale -->
+
+        <div class="forest-scale">
+
+            <span>
+                Forest coverage / attention scale
+            </span>
+
+
+            <div class="scale-bar"></div>
+
+
+            <div class="scale-labels">
+
+                <small>
+                    High forest
+                </small>
+
+                <small>
+                    Attention
+                </small>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Dashboard -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- MAP -->
+
+        <div class="map-card">
+
+
+            <div class="map-overlay">
+
+                <span class="live-dot"></span>
+
+                MONITORING ACTIVE
+
+            </div>
+
+
+            <div id="map"></div>
+
+
+            <div class="map-legend">
+
+                <span>
+                    <i class="legend-dot good"></i>
+                    Stable
+                </span>
+
+                <span>
+                    <i class="legend-dot warn"></i>
+                    Watch
+                </span>
+
+                <span>
+                    <i class="legend-dot critical"></i>
+                    Review
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- DISTRICT PANEL -->
+
+        <aside class="detail-panel">
+
+
+            <div class="panel-top">
+
+
+                <div>
+
+                    <small>
+                        SELECTED DISTRICT
+                    </small>
+
+
+                    <h3 id="districtName">
+                        Sehore
+                    </h3>
+
+
+                    <span id="districtState">
+                        Madhya Pradesh
+                    </span>
+
+                </div>
+
+
+                <button
+                    class="icon-btn"
+                    onclick="resetDistrict()"
+                    title="Reset map"
+                >
+                    ↺
+                </button>
+
+
+            </div>
+
+
+
+            <!-- KPIs -->
+
+            <div class="kpi-grid">
+
+
+                <div class="kpi">
+
+                    <small>
+                        Total claims
+                    </small>
+
+                    <strong id="totalClaims">
+                        1,000
+                    </strong>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <small>
+                        Approved
+                    </small>
+
+                    <strong id="approvedClaims">
+                        700
+                    </strong>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <small>
+                        Pending
+                    </small>
+
+                    <strong id="pendingClaims">
+                        200
+                    </strong>
+
+                </div>
+
+
+                <div class="kpi">
+
+                    <small>
+                        Rejected
+                    </small>
+
+                    <strong id="rejectedClaims">
+                        100
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Approval -->
+
+            <div class="progress-wrap">
+
+
+                <div>
+
+                    <span>
+                        Approval rate
+                    </span>
+
+                    <strong id="approvalRate">
+                        70%
+                    </strong>
+
+                </div>
+
+
+                <div class="progress">
+
+                    <i
+                        id="approvalBar"
+                        style="width:70%"
+                    ></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- AI Alert -->
+
+            <div class="alert-box">
+
+
+                <div class="alert-title">
+
+                    ⚠ AI FLAGGED CASES
+
+                    <span id="alertCount">
+                        49
+                    </span>
+
+                </div>
+
+
+                <button>
+
+                    37 delayed claims
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+                <button>
+
+                    12 land mismatches
+
+                    <span>
+                        →
+                    </span>
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- Human decision -->
+
+            <div class="human-review">
+
+
+                <div class="review-icon">
+                    👤
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Human review required
+                    </strong>
+
+                    <small>
+                        AI flags cases for investigation.
+                        Final decisions remain with officials.
+                    </small>
+
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     AI INSIGHTS
+===================================================== -->
+
+<section
+    id="insights"
+    class="content-section insights-section"
+>
+
+
+    <div class="section-inner">
+
+
+        <div class="center-heading">
+
+
+            <div class="eyebrow dark">
+
+                <span></span>
+
+                AI ANALYSIS
+
+                <span></span>
+
+            </div>
+
+
+            <h2>
+
+                From raw data
+                <em>to useful signals.</em>
+
+            </h2>
+
+
+            <p>
+
+                AI does not make the decision.
+                It helps officials understand where
+                attention may be needed first.
+
+            </p>
+
+
+        </div>
+
+
+
+        <div class="insight-grid">
+
+
+            <!-- DELAY -->
+
+            <div class="insight-card reveal">
+
+
+                <div class="insight-icon">
+                    ⏱
+                </div>
+
+
+                <span class="tag">
+                    PROCESSING DELAY
+                </span>
+
+
+                <h3>
+                    Claims taking too long
+                </h3>
+
+
+                <p>
+
+                    Claims exceeding the
+                    180-day monitoring threshold
+                    are automatically highlighted
+                    for review.
+
+                </p>
+
+
+                <div class="mini-line">
+
+                    <i style="width:72%"></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- LAND -->
+
+            <div class="insight-card reveal">
+
+
+                <div class="insight-icon">
+                    ◇
+                </div>
+
+
+                <span class="tag">
+                    LAND MISMATCH
+                </span>
+
+
+                <h3>
+                    Records don't align
+                </h3>
+
+
+                <p>
+
+                    The system compares claimed
+                    land area against available
+                    recorded information.
+
+                </p>
+
+
+                <div class="mini-line">
+
+                    <i style="width:48%"></i>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- REJECTION -->
+
+            <div class="insight-card reveal">
+
+
+                <div class="insight-icon">
+                    !
+                </div>
+
+
+                <span class="tag">
+                    PATTERN DETECTION
+                </span>
+
+
+                <h3>
+                    Unusual rejection patterns
+                </h3>
+
+
+                <p>
+
+                    District-level patterns can be
+                    surfaced when rejection rates
+                    appear unusually high.
+
+                </p>
+
+
+                <div class="mini-line">
+
+                    <i style="width:61%"></i>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- AI SUMMARY -->
+
+        <div class="ai-summary reveal">
+
+
+            <div class="ai-head">
+
+
+                <div class="ai-avatar">
+                    AI
+                </div>
+
+
+                <div>
+
+                    <b>
+                        FRA Intelligence Assistant
+                    </b>
+
+                    <small>
+                        Explainable anomaly summary
+                    </small>
+
+                </div>
+
+
+                <span class="confidence">
+                    Confidence: 91%
+                </span>
+
+            </div>
+
+
+
+            <p id="aiText">
+
+                Sehore has processed 70% of its
+                FRA claims. 37 claims have exceeded
+                the 180-day monitoring threshold,
+                while 12 records show differences
+                between claimed and recorded land
+                area. These cases should be prioritised
+                for administrative review.
+
+            </p>
+
+
+
+            <div class="exception">
+
+
+                <b>
+                    ⚠ IMPORTANT EXCEPTION
+                </b>
+
+
+                <span>
+
+                    AI-generated signals are indicators,
+                    not proof of wrongdoing. Records
+                    should be verified by authorised
+                    officials before action is taken.
+
+                </span>
+
+            </div>
+
+
+            <button
+                class="primary-btn full"
+                onclick="showAI()"
+                style="margin-top:15px"
+            >
+
+                Open AI Investigation
+
+                <span>
+                    ↗
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TECHNOLOGY
+===================================================== -->
+
+<section
+    id="tech"
+    class="content-section tech-section"
+>
+
+
+    <div class="section-inner">
+
+
+        <div class="two-col">
+
+
+            <div>
+
+
+                <div class="eyebrow dark">
+
+                    <span></span>
+
+                    BUILT FOR A HACKATHON
+
+                </div>
+
+
+                <h2>
+
+                    Lightweight.
+                    <em>Open.</em>
+                    Practical.
+
+                </h2>
+
+
+                <p class="lead">
+
+                    The MVP uses free and open technologies
+                    so the system can be demonstrated quickly
+                    and extended into a larger platform later.
+
+                </p>
+
+
+            </div>
+
+
+
+            <div class="stack-list">
+
+
+                <div>
+
+                    <span>
+                        01
+                    </span>
+
+                    <b>
+                        HTML + CSS + JavaScript
+                    </b>
+
+                    <small>
+                        Interactive frontend
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        02
+                    </span>
+
+                    <b>
+                        Leaflet + OpenStreetMap
+                    </b>
+
+                    <small>
+                        Interactive GIS map
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        03
+                    </span>
+
+                    <b>
+                        Node.js + Express
+                    </b>
+
+                    <small>
+                        Lightweight backend
+                    </small>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        04
+                    </span>
+
+                    <b>
+                        AI / LLM Layer
+                    </b>
+
+                    <small>
+                        Natural-language anomaly explanations
+                    </small>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLOSING
+===================================================== -->
+
+<section
+    class="closing-section"
+>
+
+
+    <div class="closing-landscape">
+
+
+        <div class="city">
+
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+
+        </div>
+
+
+        <div class="final-trees">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="closing-content">
+
+
+        <div class="eyebrow">
+
+            <span></span>
+
+            BETTER DATA.
+            BETTER VISIBILITY.
+
+            <span></span>
+
+        </div>
+
+
+        <h2>
+
+            Monitor better.
+            <br>
+
+            <em>Decide smarter.</em>
+
+        </h2>
+
+
+        <p>
+
+            FRA MONITOR turns fragmented information
+            into a clearer picture for people
+            responsible for implementation.
+
+        </p>
+
+
+        <button
+            class="primary-btn"
+            onclick="document.getElementById('map-section').scrollIntoView({behavior:'smooth'})"
+        >
+
+            Return to Monitor
+
+            <span>
+                ↑
+            </span>
+
+        </button>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================================
+     AI MODAL
+===================================================== -->
+
+<div
+    class="ai-modal"
+    id="aiModal"
+    aria-hidden="true"
+>
+
+
+    <div
+        class="modal-backdrop"
+    ></div>
+
+
+    <div class="modal">
+
+
+        <button
+            class="close-btn"
+            onclick="closeAI()"
+            aria-label="Close"
+        >
+            ×
+        </button>
+
+
+        <div class="ai-avatar large">
+            AI
+        </div>
+
+
+        <div class="eyebrow dark">
+
+            <span></span>
+
+            INVESTIGATION ASSISTANT
+
+        </div>
+
+
+        <h2>
+
+            Why was this
+            <em>flagged?</em>
+
+        </h2>
+
+
+        <p>
+
+            The system detected multiple signals
+            that deserve administrative review.
+            These signals are based on the mock
+            monitoring dataset used for this demo.
+
+        </p>
+
+
+
+        <div class="modal-evidence">
+
+
+            <div>
+
+                <b id="modalDelayed">
+                    37
+                </b>
+
+                <span>
+                    delayed claims
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <b id="modalMismatch">
+                    12
+                </b>
+
+                <span>
+                    land mismatches
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <b>
+                    180d
+                </b>
+
+                <span>
+                    delay threshold
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="exception">
+
+
+            <b>
+                AI recommendation
+            </b>
+
+
+            <span>
+
+                Prioritise delayed claims for
+                administrative verification and
+                cross-check land-area differences
+                against authoritative records.
+
+            </span>
+
+        </div>
+
+
+        <button
+            class="primary-btn full"
+            onclick="closeAI()"
+            style="margin-top:18px"
+        >
+
+            Acknowledge
+
+            <span>
+                ✓
+            </span>
+
+        </button>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     LEAFLET JS
+===================================================== -->
+
+<script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+></script>
+
+
+<!-- Our JavaScript -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
